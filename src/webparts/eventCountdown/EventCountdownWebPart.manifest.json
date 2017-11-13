@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "ee7a9e5e-8832-4bf6-af1c-eec3c2fc7eb5",
+  "alias": "EventCountdownWebPart",
+  "componentType": "WebPart",
+  "version": "*", // The "*" signifies that the version should be taken from the package.json
+  "manifestVersion": 2,
+
+  /**
+   * This property should only be set to true if it is certain that the webpart does not
+   *  allow arbitrary scripts to be called
+   */
+  "safeWithCustomScriptDisabled": false,
+
+  "preconfiguredEntries": [{
+    "groupId": "ee7a9e5e-8832-4bf6-af1c-eec3c2fc7eb5",
+    "group": { "default": "Under Development" },
+    "title": { "default": "Event-Countdown" },
+    "description": { "default": "Event-Countdown description" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "Event-Countdown"
+    }
+  }]
+}

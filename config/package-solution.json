@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "spfx-event-countdown-client-side-solution",
+    "id": "c4e756ff-449a-4a08-b88f-6f0f517c80d7",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-event-countdown.sppkg"
+  }
+}

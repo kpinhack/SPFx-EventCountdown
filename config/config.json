@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/eventCountdown/EventCountdownWebPart.js",
+      "manifest": "./src/webparts/eventCountdown/EventCountdownWebPart.manifest.json",
+      "outputPath": "./dist/event-countdown.bundle.js"
+    }
+  ],
+  "externals": {},
+  "localizedResources": {
+    "eventCountdownStrings": "webparts/eventCountdown/loc/{locale}.js"
+  }
+}

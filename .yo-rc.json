@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.1.1",
+    "libraryName": "spfx-event-countdown",
+    "libraryId": "c4e756ff-449a-4a08-b88f-6f0f517c80d7",
+    "environment": "spo"
+  }
+}
