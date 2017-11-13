@@ -1,3 +1,4 @@
 {
-  "cdnBasePath": "<!-- PATH TO CDN -->"
+  "cdnBasePath": "<!-- PATH TO CDN -->",
+  "debugLocale": "de-de"
 }

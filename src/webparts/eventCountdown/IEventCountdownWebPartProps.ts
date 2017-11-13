@@ -1,3 +1,3 @@
 export interface IEventCountdownWebPartProps {
-  description: string;
+  Listname: string;
 }
