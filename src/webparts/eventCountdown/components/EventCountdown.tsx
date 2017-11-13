@@ -36,7 +36,6 @@ export default class EventCountdown extends React.Component<IEventCountdownProps
   }
 
   private tick() {
-    //let difMills = Math.abs( this.props.eventDate.valueOf() - this.state.stateDate.valueOf() );
     let diffMills = Math.abs( this.props.eventDate.valueOf() - (new Date()).valueOf() );
     this.totalSeconds = Math.floor(diffMills / 1000);
     this.totalMinutes = Math.floor(this.totalSeconds / 60);
@@ -57,6 +56,8 @@ export default class EventCountdown extends React.Component<IEventCountdownProps
     return (
       <div className={styles.eventCountdown}>
         <div className={styles.container}>
+
+        {/*
         <p>Dies ist ein SPFX Webpart</p>
         <p className="ms-font-l">{escape(this.props.description)}</p>
         <p> {this.props.eventDate.toISOString()}</p>
@@ -72,18 +73,16 @@ export default class EventCountdown extends React.Component<IEventCountdownProps
         <p> Minuten: {this.diffMinutes}</p>
         <p> Sekunden: {this.diffSeconds}</p>
         <p> {this.state.stateDate.toISOString()}</p>
-        {/*
+        */}
           <div className={`ms-Grid-row ms-bgColor-themeDark ms-fontColor-white ${styles.row}`}>
             <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
-              <span className="ms-font-xl ms-fontColor-white">Welcome to SharePoint!</span>
-              <p className="ms-font-l ms-fontColor-white">Customize SharePoint experiences using Web Parts.</p>
+              
               <p className="ms-font-l ms-fontColor-white">{escape(this.props.description)}</p>
-              <a href="https://aka.ms/spfx" className={styles.button}>
-                <span className={styles.label}>Learn more</span>
-              </a>
+              <p className="ms-font-l ms-fontColor-white">in {this.totalDays} Tagen {this.diffHours} Stunden {this.diffMinutes} Minuten {this.diffSeconds} Sekunden</p>
+            
             </div>
           </div>
-          */}
+          
         </div>
       </div>
     );
